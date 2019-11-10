@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+    var a = [1, 1, 1, 3, 323, 33, 3, 3, 22, 1, 11];
+    var chongfu = {}
+
+    function cf(num) {
+        for (b = 0; b < num.length; b++) {
+            var itme = a[b];
+            if (chongfu[itme]) {
+                chongfu[itme]++;
+            } else {
+                chongfu[itme] = 1;
+            }
+        }
+        var newd = [];
+        for (var key in chongfu[itme]) {
+
+            if (chongfu[itme] == 1) {
+                newd.push(key);
+            } else {
+                if (newd.indexOf(key) == -1) {
+                    newd.push(key);
+                }
+            }
+            alert(newd);
+        }
+        
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function color() {
+
+        var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
+        var color = ['#'];
+        for (var a = 0; a < 6; a++) {
+            var b = Math.floor(Math.random() * arr.length);
+            color.push(arr[b]);
+            
+        }
+        return color.join('');
+    }
+    alert(color());
+</script>
+
+</html>
